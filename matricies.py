@@ -79,3 +79,14 @@ def matrixRotate180(M):
         R.append(line)
     return R
 matrixPrint(matrixRotate180(A),"rotate180")
+def matrixDemo(w,h):
+    R = []
+    a = 0.0
+    for i in range(h):
+        line = []
+        for j in range(w):
+            line.append(a)
+            a = a + 1 
+        R.append(line)
+    return R
+matrixPrint(matrixDemo(5,3),"matrixDemo")
